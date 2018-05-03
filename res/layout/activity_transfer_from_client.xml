@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.omerfaruk.syncdown.TransferFromClient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="@string/file_browser_title"
+        tools:context=".TransferFromClient"/>
+
+    <TextView
+        android:id="@+id/current_path_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".TransferFromServer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectDirectoryClient"
+        android:text="@string/select_dir" />
+
+    <ListView
+        android:id="@+id/file_browser_listview_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
